@@ -20,5 +20,10 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('restaurant/', include('restaurant.urls')),
-    path('restaurant/menu/',include('restaurant.APIurls')),
+    path('restaurant/api/',include('restaurant.APIurls')),
+
+    #djoser
+
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken'))
 ]
