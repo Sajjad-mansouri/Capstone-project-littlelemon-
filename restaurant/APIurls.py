@@ -8,8 +8,8 @@ router.register(r'tables', views.BookingViewSet)
 #api
 urlpatterns=[
     
-    path('menu', views.MenuItemsView.as_view()),
-    path('menu/<int:pk>', views.SingleMenuItemView.as_view()),
+    path('menu-items/', views.MenuItemsView.as_view()),
+    path('menu-items/<int:pk>', views.SingleMenuItemView.as_view()),
 
     #booking
     path('booking/', include(router.urls)),
